@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="bootstrap.min.css" />
+  <link rel="stylesheet" href="./fontawesome/css/all.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"
+    integrity="sha512-hZf9Qhp3rlDJBvAKvmiG+goaaKRZA6LKUO35oK6EsM0/kjPK32Yw7URqrq3Q+Nvbbt8Usss+IekL7CRn83dYmw=="
+    crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <!--//////////////////////////////////////////////////////PORTADA -->
+  <header class="w-100 position-relative">
+    <nav id="navbar" class="d-flex w-100 p-3 justify-content-end">
+      <a href="#aboutme" class="nav-item mx-2 p-2">About me</a>
+      <a href="#knowledge" class="nav-item mx-2 p-2">Conocimientos</a>
+      <a href="#metodology" class="nav-item mx-2 p-2">Metodologia</a>
+      <a href="#services" class="nav-item mx-2 p-2">Aplicaciones</a>
+      <a href="#footer" class="nav-item mx-2 p-2">Contacto</a>
+    </nav>
+    <div class="side-bar">
+      <ul class="center-xy flex-column rounded p-3 m-0">
+        <li><a href="#navbar" class="fas fa-chevron-circle-up"></a></li>
+        <li><a target="blank" href="https://www.instagram.com/ruizpastorino/?hl=es-la" class="fab fa-instagram"></a>
+        </li>
+        <li><a target="blank" href="http://api.whatsapp.com/send?phone=+543814039662" class="fab fa-whatsapp"></a></li>
+        <li><a target="blank" href="https://www.facebook.com/gordo.pastor/" class="fab fa-facebook"></a></li>
+        <li><a target="blank" href="https://ar.linkedin.com/in/ruizpastorino" class="fab fa-linkedin"></a></li>
+        <li><a href="#footer" class="fas fa-chevron-circle-down"></a></li>
+      </ul>
+    </div>
+    <div class="cover-container w-100">
+      <div class="center-xy col-6 p-3">
+        <div class="position-relative center-xy col-12 col-md-6">
+          <img src="./media/head-plants.png" alt="" />
+          <span class="bg-primary circle-image-big"></span>
+        </div>
+      </div>
+      <div class="p-4 col-12 col-md-6 col-lg-6">
+        <h5 class="p-1 font-weight-bold bg-light d-inline text-dark rounded">Agustin Ruiz P.</h5>
+        <h3 class="cover-title strong-text text-break">Full<span class="text-danger">Stack</span></h3>
+        <h3 style="margin-top: -10%" class="cover-title strong-text text-break"><span
+            class="text-danger">Dev</span>eloper</h3>
+        <p class="my-4 col-12 col-md-12 col-lg-9 p-0">
+          Bienvenidos a mi portfolio, Me llamo Agustín Ruiz, soy<span class="text-primary font-weight-bold"> Editor en
+            Abobe Photoshop </span> y
+          <span class="text-primary font-weight-bold">Desarrollador Web freelancer</span> con orientación al Stack MERN.
+          Diseño y creo aplicaciones
+          Web, de escritorio y móviles a medida pensadas y enfocadas al usuario.
+        </p>
+        <div>
+          <button class="px-4 btn-danger btn btn-pink mr-2">About Me</button>
+          <button class="px-4 btn btn-light">Contacto</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="container">
+    <section id="knowledge">
+      <h3 class="strong-text text-center mb-5">Desarrollo Web</h3>
+      <!--//////////////////////////////////////////////////////TECNOLOGIAS MANEJADAS -->
+      <article class="bg-secondary p-5 rounded">
+        <div class="row flex-wrap">
+          <div class="p-2 col-12 col-lg-3">
+            <h2 class="strong-text display-6 text-break">Mis Herramientas</h2>
+            <p>
+              Desde el diseño y creación de una Web o Aplicacion hasta su puesta en marcha cubro cada paso, siendo La
+              suite de Adobe la herramienta
+              principal en el diseño inicial y creación contenidos. Para desarrollo de Front End o Interfaz de Usuario
+              me especializo en el uso de
+              React y sus librerias, y en lo que respecta al Back End me destaco en la creación de Bases de Datos NoSQL
+              con herramienas como MongoDB
+              o Firebase de Google.
+            </p>
+          </div>
+          <div class="col-12 col-lg-9">
+            <h5 class="strong-text text-primary text-center">MERN <span>STACK</span></h5>
+            <canvas id="skills-chart"> </canvas>
+            <p class="font-italic text-center mt-3 text-secondary">Porcentaje de dominio de Cada Tenologia</p>
+          </div>
+        </div>
+      </article>
+      <article class="my-5">
+        <!-- <h6 class="text-center mb-5 strong-text display-6">No menos importante</h6> -->
+        <div class="row justify-content-center">
+          <div class="chart-doughnut-container">
+            <canvas id="reactnative-chart"></canvas>
+            <h5>60%</h5>
+            <label>React Native</label>
+          </div>
+          <div class="chart-doughnut-container">
+            <canvas id="electron-chart"></canvas>
+            <h5></h5>
+            <label>Electron JS</label>
+          </div>
+          <div class="chart-doughnut-container">
+            <canvas id="firebase-chart"></canvas>
+            <h5></h5>
+            <label>Firebase</label>
+          </div>
+          <div class="chart-doughnut-container">
+            <canvas id="html-chart"></canvas>
+            <h5></h5>
+            <label>HTML</label>
+          </div>
+          <div class="chart-doughnut-container">
+            <canvas class="prueba" id="css-chart"></canvas>
+            <h5></h5>
+            <label>CSS</label>
+          </div>
+          <div class="chart-doughnut-container">
+            <canvas id="bootstrap-chart"></canvas>
+            <h5></h5>
+            <label>BOOSTRAP</label>
+          </div>
+          <div class="chart-doughnut-container">
+            <canvas id="js-chart"></canvas>
+            <h5></h5>
+            <label>Javascript</label>
+          </div>
+          <div class="chart-doughnut-container">
+            <canvas id="photoshop-chart"></canvas>
+            <h5></h5>
+            <label>Photoshop</label>
+          </div>
+          <div class="chart-doughnut-container">
+            <canvas id="3D-chart"></canvas>
+            <h5></h5>
+            <label>Diseño 3D</label>
+          </div>
+          <div class="chart-doughnut-container">
+            <canvas id="english-chart"></canvas>
+            <h5></h5>
+            <label>Ingles</label>
+          </div>
+        </div>
+      </article>
+      <!--//////////////////////////////////////////////////////MUESTRA DE HABILIDADES -->
+      <article class="my-5">
+        <h3 class="text-center mb-5 strong-text">PortFolio</h3>
+        <div class="row p-0 my-5">
+          <div class="col-12 col-lg-4">
+            <h5 class="m-0">Jugando con</h5>
+            <h2 class="strong-text m-0">React JS</h2>
+            <!-- <h2 class="strong-text display-4 m-0">a Prueba</h2> -->
+            <p class="mb-3">
+              Para poner a prueba mi creatividad y capacidad a la hora de trabajar con React tome inspiración en un
+              clásico de los video juegos y
+              desarrolle esta App Web que simula el mismo. Al igual que el juego es posee parámetros configurables
+              mientras que los turnos y
+              handicap se dan de manera aleatoria.
+            </p>
+            <a href="https://toys-fight.netlify.app" target="blank"><i
+                class="fas fa-play mr-3"></i>Abrir enlace</a>
+          </div>
+          <div class="col-12 col-lg-8 p-3">
+            <img class="w-100" src="./media/toys-fight.png" alt="toys-fght" />
+          </div>
+        </div>
+        <div class="row revertible-row p-0 my-5">
+          <div class="col-12 col-lg-6">
+            <h5 class="m-0">Mi emprendimiento</h5>
+            <h2 class="strong-text">MonkeyBeat</h2>
+            <p class="display-7 mb-3">
+              Sitio Web de mi emprendimiento tecnológico que muestra mi capacidad y creatividad, diseñado en React JS
+              con base de datos en Firebase,
+              integrado con Mercado Pago y administrado desde de una aplicación de escritorio. La página actualmente se
+              encuentra en desarrollo
+              mientras también generan nuevos contenidos visuales, productos y material para tutoriales e instructivos.
+            </p>
+            <a href="https://toys-fight.netlify.app" target="blank"><i
+                class="fas fa-play mr-3"></i>Abrir enlace</a>
+          </div>
+          <div class="col-12 col-lg-6 p-3">
+            <img class="w-100" src="./media/monkeybeat-instructivos.jpg" alt="toys-fght" />
+          </div>
+        </div>
+      </article>
+
+      <!--//////////////////////////////////////////////////////PRODUCTOS -->
+      <article id="services" class="my-5">
+        <h3 class="strong-text text-center mb-5">Desarrollo de Apps</h3>
+        <!--//////////////////////////////////////////////////////BANNER -->
+        <div class="w-100 my-5">
+          <div class="row d-flex align-items-start justify-content-end">
+            <div class="col-12 col-lg-6 my-2">
+              <h4 class="strong-text m-0">Enfoque en el usuario</h4>
+              <p class="">
+                Una aplicación debe estar diseñado para las personas que lo usarán. El diseño se integra fácilmente con
+                cualquier dispositivo, está
+                centrado en el usuario en una interfaz amigable e intuitiva que facilita las tareas cotidianas con
+                herramientas para el análisis y
+                rápida toma de decisiones.
+              </p>
+            </div>
+            <div class="d-flex align-items-end justify-content-center p-2 col-12 col-lg-6 my-2">
+              <i class="mr-3 fas fa-tv display-2"></i>
+              <i class="mr-3 fas fa-desktop display-3"></i>
+              <i class="mr-3 fas fa-tablet-alt display-4"></i>
+              <i class="mr-3 fas fa-mobile-alt display-5"></i>
+            </div>
+          </div>
+        </div>
+
+        <p class="my-3 text-justify"></p>
+        <div class="row flex-wrap my-5">
+          <div class="col-12 col-md-6 mb-5">
+            <h5 class="mb-4"><i class="fas fa-car text-success mr-2"></i>Spider-GECO</h5>
+            <img class="w-100 border border-warning" src="./media/cochera.jpg" alt="" />
+            <p class="my-4">
+              Spider-GECO es una aplicación para gestión de cobros para cocheras comerciales. Permite la realizar de
+              cobros por hora, día o mensual,
+              facturación diaria, creación de múltiples usuarios con diferentes niveles de acceso, registros detallados
+              con marca de tiempo,
+              registro de gastos, gestión de sucursales, gestión de personal, facturación por turnos, emisión de tickets
+              , balances mensuales,
+              estadísticas de movimientos, proyecciones de ventas, consultas de facturación por fecha, apertura y cierre
+              de facturación. Todo
+              gestionado a través de una interfaz de usuario sencilla e intuitiva con base de datos en la nube que
+              admite transacciones en tiempo
+              real.
+            </p>
+          </div>
+          <div class="col-12 col-md-6 mb-5">
+            <h5 class="mb-4"><i class="fas fa-tools text-warning mr-2"></i>Spider-GEMA</h5>
+            <img class="w-100 border border-warning" src="./media/servigruas.jpg" alt="" />
+            <p class="my-4">
+              Spider-GEMA es una aplicación para gestión de insumos y mantenimiento equipos. Permite entre muchas otras
+              funciones llevar control y
+              movimientos de stock, relacionar insumos equivalentes, relacionar repuestos con su respectivo equipo,
+              generar alertas de
+              mantenimiento, generar reportes de compras, administrar mantenimiento preventivo y correctivo, alertas,
+              ordenes de trabajo,
+              administrar documentaciones con vencimiento, gestionar personal, calcular costos mantenimiento, emitir
+              reportes de movimientos,
+              administrar múltiples almacenes o depósitos. Todo a través de una interfaz de usuario sencilla e intuitiva
+              con base de datos en la
+              nube que admite transacciones en tiempo real en version de escritorio y/o para dispositivos móviles.
+            </p>
+          </div>
+          <div class="col-12 col-md-6 mb-5">
+            <h5 class="mb-4"><i class="fas fa-box-open text-info mr-2"></i>Spider-GEAR</h5>
+            <img class="w-100 border border-warning" src="./media/2d02626d-003d-4f92-b6c3-3308fdc3b723.jpg" alt="" />
+            <p class="my-4">
+              Spider-GEAR es una Aplicación para gestión de Puestos de Venta. Permite administración de sucursales o
+              almacenes, artículos, stock,
+              asignar ubicación, codificar un producto, ventas, compras, alertas para stock bajo, relacionar artículos
+              por tamaños, precio, modelo o
+              marca, administrar usuarios, registros con marca de tiempo, ingreso y egreso de artículos, facturación
+              diaria, facturación por turnos,
+              apertura, cierre diario entre otras funciones, también permite la emisión de comprobantes impresos no
+              validos como factura y etiquetas
+              de productos con información detallada. Todo es gestionado a través de una interfaz sencilla e intuitiva
+              conectada a una base de datos
+              en la nube en tiempo real desde su versión de escritorio o para dispositivos móviles.
+            </p>
+          </div>
+          <div class="col-12 col-md-6 mb-5">
+            <h5 class="mb-4"><i class="fas fa-cookie-bite text-danger mr-2"></i>Spider-GEPRO</h5>
+            <img class="w-100 border border-warning" src="./media/servigruas.jpg" alt="" />
+            <p class="my-4">
+              Spider-GEPRO es una Aplicación para gestión de productos manufacturados. Permite administración de
+              insumos, productos terminados,
+              costos de insumos, sucursales o almacenes, artículos, stock, asignar ubicación, codificar un producto,
+              ventas, compras, alertas para
+              stock bajo, relacionar artículos por tamaños, precio, modelo o marca, administrar usuarios, registros con
+              marca de tiempo, ingreso y
+              egreso de artículos, facturación diaria, facturación por turnos, apertura, cierre diario entre otras
+              funciones, también permite la
+              emisión de comprobantes impresos no validos como factura y etiquetas de productos con información
+              detallada. Todo es gestionado a
+              través de una interfaz sencilla e intuitiva conectada a una base de datos en la nube en tiempo real desde
+              su versión de escritorio o
+              para dispositivos móviles.
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+    <hr class="my-5">
+    <section id="metodology" class="my-5">
+      <h3 class="strong-text text-center mb-5">Metodologia de Trabajo</h3>
+      <div class="row">
+        <div class="d-flex col-12 col-md-6 col-lg-4 my-3">
+          <div class="p-3">
+            <h2 class="display-4 strong-text">1</h2>
+          </div>
+          <div class="flex-1 p-3">
+            <h5>Resumen</h5>
+            <p>
+              Comienzo recibiendo un resumen de lo que necesita o del área en el que se desempeña para tener suficiente
+              contexto y poder ofrecerle una propuesta.
+            </p>
+          </div>
+        </div>
+        <div class="d-flex col-12 col-md-6 col-lg-4 my-3">
+          <div class="p-3">
+            <h2 class="display-4 strong-text">2</h2>
+          </div>
+          <div class="flex-1 p-3">
+            <h5>Diseño</h5>
+            <p>
+              En el caso que no tengamos una base en la que comenzar, aquí es donde perfeccionamos el diseño coordinando
+              aspectos estéticos y funcionales
+            </p>
+          </div>
+        </div>
+        <div class="d-flex col-12 col-md-6 col-lg-4 my-3">
+          <div class="p-3">
+            <h2 class="display-4 strong-text">3</h2>
+          </div>
+          <div class="flex-1 p-3">
+            <h5>Desarrollo</h5>
+            <p>
+              Comenzamos el desarrollo del producto y coordinamos revisiones periódicas del progreso para afinar los
+              detalles y funcionamiento
+          </div>
+        </div>
+        <div class="d-flex col-12 col-md-6 col-lg-4 my-3">
+          <div class="p-3">
+            <h2 class="display-4 strong-text">4</h2>
+          </div>
+          <div class="flex-1 p-3">
+            <h5>Capacitación</h5>
+            <p>
+              Repasamos funcionalidades y entrenamos en el funcionamiento de todas y cada una de las herramientas
+              desarrolladas dentro del producto.
+          </div>
+        </div>
+        <div class="d-flex col-12 col-md-6 col-lg-4 my-3">
+          <div class="p-3">
+            <h2 class="display-4 strong-text">5</h2>
+          </div>
+          <div class="flex-1 p-3">
+            <h5>Testing</h5>
+            <p>
+              Nos aseguramos el correcto funcionamiento del producto, analizamos el mismo y si es necesario se retorna
+              al paso 5 para implementarlas
+          </div>
+        </div>
+        <div class="d-flex col-12 col-md-6 col-lg-4 my-3">
+          <div class="p-3">
+            <h2 class="display-4 strong-text">6</h2>
+          </div>
+          <div class="flex-1 p-3">
+            <h5>Puesta en marcha</h5>
+            <p>
+              Ya estamos listo para la puesta en marcha del producto realizamos una última capacitación si es necesario
+              y me encargo de que todo este instalado y listo para funcionar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="my-5">
+    <!--//////////////////////////////////////////////////////ACERCA DE MI -->
+    <article id="aboutme" class="d-flex flex-wrap container align-items-center">
+      <div class="col-12 col-md-4 mb-4">
+        <div class="img-wrapper p-2 position-relative reverse">
+          <span class="bg-warning circle-image"></span>
+          <img class="piece piece-1" src="./media/gorra.png" />
+          <img class="piece piece-2" src="./media/ojos.png" />
+          <img class="piece piece-3" src="./media/nariz.png" />
+          <img class="piece piece-4" src="./media/mandibula.png" />
+        </div>
+      </div>
+      <div class="text-dark p-2 col-12 col-md-8 mb-4">
+        <h2 class="strong-text display-5"><i class="fas fa-id-card"></i> About Me</h2>
+        <p>
+          Soy Agustín Ruiz Pastorino soy Músico, Editor de Photoshop y principalmente Desarrollador Web Freelancer,
+          tengo
+          <span id="currentAge"></span> años y vivo en la ciudad de San Miguel de Tucumán en Tucumán (Argentina) donde
+          me desempeño en el desarrollo
+          de aplicaciones de escritorio y móviles utilizando tecnologías y lenguajes de programación Web. Comencé en el
+          mundo de la programación en
+          el año 2017 programando en C++ como autodidacta de Arduino emprendiendo un proyecto como hobby relacionado a
+          instrumentos musicales el
+          cual termino convirtiéndose en un pequeño emprendimiento comercial y una puerta de inicio hacia el mundo de la
+          programación. Luego
+          continúe mi formación realizando cursos de capacitación en Desarrollo Web relacionados al Front End y Back
+          End, los cuales me dieron las
+          bases y conocimientos para continuar un constante aprendizaje por cuenta propia indagando en diferentes
+          tecnologías, foros de debate,
+          tutoriales y documentaciones.
+        </p>
+      </div>
+    </article>
+    <!--//////////////////////////////////////////////////////SOBRE PHOTOSHOP -->
+    <article class="container my-5 p-3 bg-secondary">
+      <h2 class="text-center strong-text display-6">Mis Ediciones en Photoshop</h2>
+      <div class="justify-content-between row p-3">
+        <div class="sample-thumb">
+          <img class="" src="./media/ps-sample3.jpg" alt="" />
+        </div>
+        <div class="sample-thumb">
+          <img class="" src="./media/ps-sample4.jpg" alt="" />
+        </div>
+        <div class="sample-thumb">
+          <img class="" src="./media/ps-sample5.jpg" alt="" />
+        </div>
+        <div class="sample-thumb">
+          <img class="" src="./media/ps-sample1.jpg" alt="" />
+        </div>
+        <div style="height: unset" class="w-100 sample-thumb">
+          <img class="w-100" src="./media/ps-sample6.jpg" alt="" />
+        </div>
+      </div>
+      <p class="text-center p-2 font-italic">
+        Ediciones realizadas como colaborador en comunidad de phostoshopistas y Editores Gráficos de todo el mundo
+      </p>
+    </article>
+  </main>
+  <!--//////////////////////////////////////////////////////FOOTER -->
+  <script src="./moment.min.js"></script>
+  <script src="./utility.js"></script>
+
+  <footer id="footer" class="w-100 bg-dark p-5 d-flex justify-content-center flex-wrap">
+    <div class="text-center p-2 col-12 col-md-6 col-lg-3">
+      <i class="fas fa-laptop-code display-3 mb-3"></i>
+      <h1 class="display-6 strong-text">
+        <span class="text-warning">Ruiz Pastorino</span> <br />
+        M. Agustin
+      </h1>
+    </div>
+    <div class="d-flex flex-wrap p-2 col-12 col-md-6 col-lg-3">
+      <div class="col-12 col-md-4 p-2">
+        <i class="fas fa-box-open display-3"></i>
+      </div>
+      <div class="col-12 col-md-8">
+        <h6 class="strong-text display-6">Productos</h6>
+        <a class="text-light d-block display-8 mb-1" href="">Gestion de Articulos</a>
+        <a class="text-light d-block display-8 mb-1" href="">Gestion de Productos</a>
+        <a class="text-light d-block display-8 mb-1" href="">Gestion de Cocheras</a>
+        <a class="text-light d-block display-8 mb-1" href="">Gestion de Mantenimiento</a>
+      </div>
+    </div>
+    <div class="d-flex flex-wrap p-2 col-12 col-md-6 col-lg-3">
+      <div class="col-12 col-md-4 p-2">
+        <i class="fas fa-user-tie display-3"></i>
+      </div>
+      <div class="col-12 col-md-8">
+        <p class="strong-text">San Miguel de Tucumán</p>
+        <p>Tucumán - Argentina</p>
+        <p class="strong-text">Contacto</p>
+        <p>ruizpastorino@hotmail.com</p>
+        <p>+543814039662</p>
+      </div>
+    </div>
+    <div class="p-2 text-center col-12 col-md-6 col-lg-3">
+      <h6 class="strong-text">Social Media Networks</h6>
+      <div>
+        <i class="display-5 mr-2 fab fa-facebook"></i>
+        <i class="display-5 mr-2 fab fa-instagram"></i>
+        <i class="display-5 mr-2 fab fa-whatsapp"></i>
+        <i class="display-5 mr-2 fab fa-linkedin"></i>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
