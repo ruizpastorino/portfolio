@@ -60,7 +60,7 @@ const generateChart = (id, label, value) => {
   });
 };
 
-generateChart("reactnative", "React Native", 45);
+generateChart("reactnative", "React Native", 50);
 generateChart("electron", "Electron", 50);
 generateChart("firebase", "Firebase", 75);
 generateChart("html", "HTML", 80);
