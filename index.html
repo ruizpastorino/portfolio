@@ -1,466 +1,747 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"
+      integrity="sha512-hZf9Qhp3rlDJBvAKvmiG+goaaKRZA6LKUO35oK6EsM0/kjPK32Yw7URqrq3Q+Nvbbt8Usss+IekL7CRn83dYmw=="
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="bootstrap.min.css" />
-  <link rel="stylesheet" href="./fontawesome/css/all.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"
-    integrity="sha512-hZf9Qhp3rlDJBvAKvmiG+goaaKRZA6LKUO35oK6EsM0/kjPK32Yw7URqrq3Q+Nvbbt8Usss+IekL7CRn83dYmw=="
-    crossorigin="anonymous"></script>
-  <title>Document</title>
-</head>
-
-<body>
-  <!--//////////////////////////////////////////////////////PORTADA -->
-  <header class="w-100 position-relative">
-    <nav id="navbar" class="d-flex w-100 p-3 justify-content-end">
-      <a href="#aboutme" class="nav-item mx-2 p-2">About me</a>
-      <a href="#knowledge" class="nav-item mx-2 p-2">Conocimientos</a>
-      <a href="#metodology" class="nav-item mx-2 p-2">Metodologia</a>
-      <a href="#services" class="nav-item mx-2 p-2">Aplicaciones</a>
-      <a href="#footer" class="nav-item mx-2 p-2">Contacto</a>
-    </nav>
-    <div class="side-bar">
-      <ul class="center-xy flex-column rounded p-3 m-0">
-        <li><a href="#navbar" class="fas fa-chevron-circle-up"></a></li>
-        <li><a target="blank" href="https://www.instagram.com/ruizpastorino/?hl=es-la" class="fab fa-instagram"></a>
-        </li>
-        <li><a target="blank" href="http://api.whatsapp.com/send?phone=+543814039662" class="fab fa-whatsapp"></a></li>
-        <li><a target="blank" href="https://www.facebook.com/gordo.pastor/" class="fab fa-facebook"></a></li>
-        <li><a target="blank" href="https://ar.linkedin.com/in/ruizpastorino" class="fab fa-linkedin"></a></li>
-        <li><a href="#footer" class="fas fa-chevron-circle-down"></a></li>
-      </ul>
-    </div>
-    <div class="cover-container w-100">
-      <div class="center-xy col-6 p-3">
-        <div class="position-relative center-xy col-12 col-md-6">
-          <img src="./media/head-plants.png" alt="" />
-          <span class="bg-primary circle-image-big"></span>
+  <body>
+    <!--//////////////////////////////////////////////////////PORTADA -->
+    <header class="w-100 position-relative">
+      <nav id="navbar"></nav>
+      <div class="side-bar">
+        <ul class="d-flex flex-column justify-content-between m-0">
+          <li>
+            <a href="#navbar" class="nav-item">
+              <i class="fas fa-chevron-circle-up"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#knowledge" class="nav-item">
+              <i class="fas fa-book"></i>
+              <p>Knowledge</p>
+            </a>
+          </li>
+          <li>
+            <a href="#experience" class="nav-item">
+              <i class="fa-solid fa-clock"></i>
+              <p>Experience</p>
+            </a>
+          </li>
+          <li>
+            <a href="#skills" class="nav-item">
+              <i class="fa-solid fa-list-check"></i>
+              <p>Other Skills</p>
+            </a>
+          </li>
+          <li>
+            <a href="#samples" class="nav-item">
+              <i class="fa-solid fa-laptop-code"></i>
+              <p>Work Samples</p>
+            </a>
+          </li>
+          <li>
+            <a href="#navbar" class="nav-item">
+              <i class="fa-solid fa-images"></i>
+              <p>Photoshop Edits</p>
+            </a>
+          </li>
+          <li>
+            <a href="#aboutme" class="nav-item">
+              <i class="fa-solid fa-user-tie"></i>
+              <p>About me</p>
+            </a>
+          </li>
+          <li>
+            <a href="#footer" class="nav-item">
+              <i class="fas fa-chevron-circle-down"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="cover-container w-100">
+        <div class="center-xy col-6 p-3">
+          <div class="position-relative center-xy col-12 col-md-6">
+            <img src="./assets/head-plants.png" alt="" />
+            <span class="bg-primary circle-image-big"></span>
+          </div>
+        </div>
+        <div class="p-4 col-12 col-md-6">
+          <h5 class="p-1 font-weight-bold bg-light d-inline text-dark rounded">
+            Agustin Ruiz P.
+          </h5>
+          <h3 class="cover-title strong-text">
+            Full<span class="text-danger">Stack</span>
+          </h3>
+          <h4 style="margin-top: -10%" class="cover-title strong-text">
+            <span class="text-danger">Dev</span>eloper
+          </h4>
+          <p class="my-4 col-12 col-md-12 col-lg-9 p-0">
+            I’m a full stack web developer specializing in the creation of
+            custom ERP systems for businesses. I work primarily with React.js on
+            the frontend and Node.js on the backend, combining technical
+            efficiency with a practical mindset focused on building tools that
+            simplify workflows and solve real-world needs.
+          </p>
+          <div>
+            <button class="px-4 btn-danger btn btn-pink mr-2">
+              <a href="#samples">Works</a>
+            </button>
+            <button class="px-4 btn btn-light">
+              <a href="#footer" class="text-secondary">Contact</a>
+            </button>
+          </div>
         </div>
       </div>
-      <div class="p-4 col-12 col-md-6 col-lg-6">
-        <h5 class="p-1 font-weight-bold bg-light d-inline text-dark rounded">Agustin Ruiz P.</h5>
-        <h3 class="cover-title strong-text text-break">Full<span class="text-danger">Stack</span></h3>
-        <h3 style="margin-top: -10%" class="cover-title strong-text text-break"><span
-            class="text-danger">Dev</span>eloper</h3>
-        <p class="my-4 col-12 col-md-12 col-lg-9 p-0">
-          Bienvenidos a mi portfolio, Me llamo Agustín Ruiz, soy<span class="text-primary font-weight-bold"> Editor en
-            Abobe Photoshop </span> y
-          <span class="text-primary font-weight-bold">Desarrollador Web freelancer</span> con orientación al Stack MERN.
-          Diseño y creo aplicaciones
-          Web, de escritorio y móviles a medida pensadas y enfocadas al usuario.
+    </header>
+    <main style="max-width: 1000px" class="container">
+      <section id="knowledge" class="my-5">
+        <h3 class="strong-text mb-3">
+          <i class="far text-success fa-dot-circle mr-3"></i>KNOWLEDGE
+        </h3>
+        <p>
+          Throughout my journey, I’ve developed a well-rounded skill set that
+          spans from visual design to programming and system implementation. On
+          the design side, I’m proficient with tools like Photoshop, which I use
+          to create compositions, retouch images, build photo montages, and give
+          visual style to projects when needed. Although my main focus is
+          development, I care deeply about aesthetics and understanding how
+          visual and functional aspects come together. In terms of web
+          development, I specialize in the MERN stack, working with modern
+          technologies like React.js on the frontend to build dynamic,
+          intuitive, and scalable interfaces. On the backend, I use Node.js to
+          develop robust and efficient APIs. I have experience building ERP
+          systems, which has given me a solid understanding of how to structure
+          real-world projects that solve concrete problems for businesses.
+          Additionally, I have a background in electronics applied to music,
+          which helped me understand how hardware and software interact, and
+          provided me with a strong foundation for approaching challenges from
+          different perspectives. In short, I’m comfortable throughout the
+          entire process — from an initial idea or visual sketch, to writing
+          code and delivering a fully functional system.
         </p>
-        <div>
-          <button class="px-4 btn-danger btn btn-pink mr-2">About Me</button>
-          <button class="px-4 btn btn-light">Contacto</button>
+
+        <div
+          class="d-flex justify-content-center flex-wrap container py-3 mt-5"
+        >
+          <div class="tech-container">
+            <img
+              src="https://cdn.simpleicons.org/html5/ababab"
+              alt="HTML5 logo"
+              class="tech-logo"
+            />
+            <p>HTML5</p>
+          </div>
+          <div class="tech-container">
+            <img
+              src="https://cdn.simpleicons.org/css/ababab"
+              alt="CSS logo"
+              class="tech-logo"
+            />
+            <p>CSS</p>
+          </div>
+          <div class="tech-container">
+            <img
+              src="https://cdn.simpleicons.org/javascript/ababab"
+              alt="Javascript logo"
+              class="tech-logo"
+            />
+            <p>Javascript</p>
+          </div>
+          <div class="tech-container">
+            <img
+              src="https://cdn.simpleicons.org/react/ababab"
+              alt="React logo"
+              class="tech-logo"
+            />
+            <p>React</p>
+          </div>
+          <div class="tech-container">
+            <img
+              src="https://cdn.simpleicons.org/sass/ababab"
+              alt="Sass logo"
+              class="tech-logo"
+            />
+            <p>Sass</p>
+          </div>
+          <div class="tech-container">
+            <img
+              src="https://cdn.simpleicons.org/tailwindcss/ababab"
+              alt="Tailwind logo"
+              class="tech-logo"
+            />
+            <p>Tailwind</p>
+          </div>
+          <div class="tech-container">
+            <img
+              src="https://cdn.simpleicons.org/bootstrap/ababab"
+              alt="Bootstrap logo"
+              class="tech-logo"
+            />
+            <p>Bootstrap</p>
+          </div>
+          <div class="tech-container">
+            <img
+              src="https://cdn.simpleicons.org/nextdotjs/ababab"
+              alt="Next logo"
+              class="tech-logo"
+            />
+            <p>Next</p>
+          </div>
+          <div class="tech-container">
+            <img
+              src="https://cdn.simpleicons.org/typescript/ababab"
+              alt="Typescript logo"
+              class="tech-logo"
+            />
+            <p>Typescript</p>
+          </div>
+          <div class="tech-container">
+            <img
+              src="https://cdn.simpleicons.org/redux/ababab"
+              alt="Redux logo"
+              class="tech-logo"
+            />
+            <p>Redux</p>
+          </div>
+          <div class="tech-container">
+            <img
+              src="https://cdn.simpleicons.org/electron/ababab"
+              alt="ElectronJS logo"
+              class="tech-logo"
+            />
+            <p>ElectronJS</p>
+          </div>
+          <div class="tech-container">
+            <img
+              src="https://cdn.simpleicons.org/nodedotjs/ababab"
+              alt="Node logo"
+              class="tech-logo"
+            />
+            <p>Node</p>
+          </div>
+          <div class="tech-container">
+            <img
+              src="https://cdn.simpleicons.org/express/ababab"
+              alt="Express logo"
+              class="tech-logo"
+            />
+            <p>Express</p>
+          </div>
+          <div class="tech-container">
+            <img
+              src="https://cdn.simpleicons.org/tsnode/ababab"
+              alt="Typescript Node logo"
+              class="tech-logo"
+            />
+            <p>Typescript Node</p>
+          </div>
+          <div class="tech-container">
+            <img
+              src="https://cdn.simpleicons.org/firebase/ababab"
+              alt="CSS logo"
+              class="tech-logo"
+            />
+            <p>CSS</p>
+          </div>
+          <div class="tech-container">
+            <img
+              src="https://cdn.simpleicons.org/mongodb/ababab"
+              alt="MongoDB logo"
+              class="tech-logo"
+            />
+            <p>MongoDB</p>
+          </div>
+          <div class="tech-container">
+            <img
+              src="https://cdn.simpleicons.org/mongoose/ababab"
+              alt="Mongoose logo"
+              class="tech-logo"
+            />
+            <p>Mongoose</p>
+          </div>
+          <div class="tech-container">
+            <img
+              src="https://cdn.simpleicons.org/postgresql/ababab"
+              alt="Postgress Sql logo"
+              class="tech-logo"
+            />
+            <p>Postgress Sql</p>
+          </div>
+          <div class="tech-container">
+            <img
+              src="https://cdn.simpleicons.org/sequelize/ababab"
+              alt="Sequelize logo"
+              class="tech-logo"
+            />
+            <p>Sequelize</p>
+          </div>
+          <div class="tech-container">
+            <img
+              src="https://cdn.simpleicons.org/jsonwebtokens/ababab"
+              alt="JSON Web Tokens logo"
+              class="tech-logo"
+            />
+            <p>JSON Web Tokens</p>
+          </div>
+          <div class="tech-container">
+            <img
+              src="https://cdn.simpleicons.org/npm/ababab"
+              alt="NPM logo"
+              class="tech-logo"
+            />
+            <p>NPM</p>
+          </div>
+          <div class="tech-container">
+            <img
+              src="https://cdn.simpleicons.org/github/ababab"
+              alt="Github logo"
+              class="tech-logo"
+            />
+            <p>Github</p>
+          </div>
+          <div class="tech-container">
+            <img
+              src="https://cdn.simpleicons.org/bitbucket/ababab"
+              alt="Bitbucket logo"
+              class="tech-logo"
+            />
+            <p>Bitbucket</p>
+          </div>
+          <div class="tech-container">
+            <img
+              src="https://cdn.simpleicons.org/trello/ababab"
+              alt="Trello logo"
+              class="tech-logo"
+            />
+            <p>Trello</p>
+          </div>
+          <div class="tech-container">
+            <img
+              src="https://cdn.simpleicons.org/git/ababab"
+              alt="Git logo"
+              class="tech-logo"
+            />
+            <p>Git</p>
+          </div>
         </div>
-      </div>
-    </div>
-  </header>
-  <main class="container">
-    <section id="knowledge">
-      <h3 class="strong-text text-center mb-5">Desarrollo Web</h3>
-      <!--//////////////////////////////////////////////////////TECNOLOGIAS MANEJADAS -->
-      <article class="bg-secondary p-5 rounded">
-        <div class="row flex-wrap">
-          <div class="p-2 col-12 col-lg-3">
-            <h2 class="strong-text display-6 text-break">Mis Herramientas</h2>
-            <p>
-              Desde el diseño y creación de una Web o Aplicacion hasta su puesta en marcha cubro cada paso, siendo La
-              suite de Adobe la herramienta
-              principal en el diseño inicial y creación contenidos. Para desarrollo de Front End o Interfaz de Usuario
-              me especializo en el uso de
-              React y sus librerias, y en lo que respecta al Back End me destaco en la creación de Bases de Datos NoSQL
-              con herramienas como MongoDB
-              o Firebase de Google.
+      </section>
+      <section id="experience" class="w-100">
+        <h3 class="mb-5 strong-text">
+          <i class="far text-success fa-dot-circle mr-3"></i>EXPERIENCES
+        </h3>
+        <article class="d-flex">
+          <div class="d-flex flex-column align-items-center">
+            <div class="time-dot mt-3"></div>
+            <div class="time-line"></div>
+          </div>
+          <div class="d-flex flex-column col-4">
+            <h3 class="strong-text m-0">YUPIX INC</h3>
+            <p class="font-italic">
+              Yupix Inc. is a company that merges meta-reality and the real
+              estate sector. It creates immersive experiences that facilitate
+              decision-making.
             </p>
+            <div class="d-flex align-items-center my-2">
+              <i class="fa fa-map-marker-alt mr-2 text-primary"></i>
+              <p class="strong-text">Miami - Estados Unidos</p>
+            </div>
+            <div class="d-flex align-items-center my-2">
+              <i class="fa fa-calendar-alt mr-2 text-primary"></i>
+              <p class="font-italic">February 2022 - Today</p>
+            </div>
+            <div class="d-flex align-items-center my-2">
+              <i class="far fa-clock mr-2 text-primary"></i>
+              <p class="strong-text">4 years</p>
+            </div>
           </div>
-          <div class="col-12 col-lg-9">
-            <h5 class="strong-text text-primary text-center">MERN <span>STACK</span></h5>
-            <canvas id="skills-chart"> </canvas>
-            <p class="font-italic text-center mt-3 text-secondary">Porcentaje de dominio de Cada Tenologia</p>
+          <div>
+            <p class="strong-text text-warning">FULLSTACK DEVELOPER</p>
+            <p>
+              As part of the IT team at Yupix Inc., I work as a Fullstack
+              Developer contributing across the entire stack. My main
+              responsibilities include:
+            </p>
+            <ul class="experience-list">
+              <li>
+                Designing and maintaining secure, scalable APIs using Node.js,
+                Express, PostgreSQL, and Sequelize
+              </li>
+              <li>
+                Developing internal libraries of reusable React, Next.js, and
+                TypeScript components, custom hooks, and utilities to optimize
+                frontend development
+              </li>
+              <li>Bug fixes, performance improvements, and code refactoring</li>
+              <li>
+                Writing clear technical documentation for newly developed
+                components and implemented changes to support internal teams
+              </li>
+            </ul>
           </div>
-        </div>
-      </article>
-      <article class="my-5">
-        <!-- <h6 class="text-center mb-5 strong-text display-6">No menos importante</h6> -->
-        <div class="row justify-content-center">
-          <div class="chart-doughnut-container">
-            <canvas id="reactnative-chart"></canvas>
-            <h5>60%</h5>
-            <label>React Native</label>
+        </article>
+        <article class="d-flex">
+          <div class="d-flex flex-column align-items-center">
+            <div class="time-line short-line"></div>
+            <div class="time-dot"></div>
+            <div class="time-line"></div>
           </div>
-          <div class="chart-doughnut-container">
-            <canvas id="electron-chart"></canvas>
-            <h5></h5>
-            <label>Electron JS</label>
+          <div class="d-flex flex-column col-4">
+            <h3 class="strong-text m-0">CIRCCLO</h3>
+            <p class="font-italic">
+              Circclo is a digital marketplace focused on sustainable products
+              that reduce the use of unnecessary plastics.
+            </p>
+            <div class="d-flex align-items-center my-2">
+              <i class="fa fa-map-marker-alt mr-2 text-primary"></i>
+              <p class="strong-text">Tucumán - Argentina</p>
+            </div>
+            <div class="d-flex align-items-center my-2">
+              <i class="fa fa-calendar-alt mr-2 text-primary"></i>
+              <p class="font-italic">March 2022 - May 2023</p>
+            </div>
+            <div class="d-flex align-items-center my-2">
+              <i class="far fa-clock mr-2 text-primary"></i>
+              <p class="strong-text">1 year</p>
+            </div>
           </div>
-          <div class="chart-doughnut-container">
-            <canvas id="firebase-chart"></canvas>
-            <h5></h5>
-            <label>Firebase</label>
+          <div>
+            <p class="strong-text text-warning">DEVELOPER</p>
+            <p>
+              Sole developer in charge of improving and completing a previously
+              unfinished ERP system and API. My responsibilities included:
+            </p>
+            <ul class="experience-list">
+              <li>
+                Refactoring and redesigning existing React components for better
+                performance and maintainability.
+              </li>
+              <li>
+                Fixing bugs and completing partial features left by the previous
+                team
+              </li>
+              <li>
+                Implementing QR code-based traceability for reusable packaging,
+                enabling data analytics on consumer behavior and packaging reuse
+              </li>
+              <li>
+                Integrating Arduino-based smart devices with the system to
+                enable real-time interaction between hardware and software
+              </li>
+            </ul>
           </div>
-          <div class="chart-doughnut-container">
-            <canvas id="html-chart"></canvas>
-            <h5></h5>
-            <label>HTML</label>
+        </article>
+        <article class="d-flex">
+          <div class="d-flex flex-column align-items-center">
+            <div class="time-line short-line"></div>
+            <div class="time-dot"></div>
+            <div class="time-line"></div>
+            <div style="opacity: 0.3" class="time-dot small-dot mt-2"></div>
+            <div style="opacity: 0.2" class="time-dot small-dot mt-2"></div>
+            <div style="opacity: 0.1" class="time-dot small-dot mt-2"></div>
           </div>
-          <div class="chart-doughnut-container">
-            <canvas class="prueba" id="css-chart"></canvas>
-            <h5></h5>
-            <label>CSS</label>
+          <div class="d-flex flex-column col-4">
+            <h3 class="strong-text m-0">SERVIGRUAS</h3>
+            <p class="font-italic">
+              Servigruas is a rental service company for telescopic hydraulic
+              cranes, manipulators, and lifting platforms.
+            </p>
+            <div class="d-flex align-items-center my-2">
+              <i class="fa fa-map-marker-alt mr-2 text-primary"></i>
+              <p class="strong-text">Tucumán - Argentina</p>
+            </div>
+            <div class="d-flex align-items-center my-2">
+              <i class="fa fa-calendar-alt mr-2 text-primary"></i>
+              <p class="font-italic">May 2020 - February 2022</p>
+            </div>
+            <div class="d-flex align-items-center my-2">
+              <i class="far fa-clock mr-2 text-primary"></i>
+              <p class="strong-text">2 years</p>
+            </div>
           </div>
-          <div class="chart-doughnut-container">
-            <canvas id="bootstrap-chart"></canvas>
-            <h5></h5>
-            <label>BOOSTRAP</label>
+          <div>
+            <p class="strong-text text-warning">
+              DEVELOPER & WAREHOUSE OPERATIONS
+            </p>
+            <p>
+              Initially joined in a dual role to both support warehouse
+              operations and develop a custom digital solution to manage
+              inventory. Responsibilities and achievements included:
+            </p>
+            <ul class="experience-list">
+              <li>
+                Gained hands-on understanding of warehouse workflows by actively
+                participating in inventory management and tool tracking
+                operations.
+              </li>
+              <li>
+                Developed a simple internal app to manage stock movements,
+                including spare part dispatch, tool returns, and inventory
+                updates.
+              </li>
+              <li>
+                As the application matured, I was assigned the design and
+                development of a more comprehensive ERP-style system, tailored
+                to manage:
+                <br />- Scheduled maintenance of heavy machinery <br />-
+                Administrative workflows across various departments Multi-depot
+                <br />- inventory synchronization
+              </li>
+              <li>
+                Implemented real-time crane tracking and created a system to
+                monitor part lifespan based on machine working hours, enabling
+                more accurate maintenance planning and part replacement cycles
+              </li>
+            </ul>
           </div>
-          <div class="chart-doughnut-container">
-            <canvas id="js-chart"></canvas>
-            <h5></h5>
-            <label>Javascript</label>
-          </div>
-          <div class="chart-doughnut-container">
-            <canvas id="photoshop-chart"></canvas>
-            <h5></h5>
-            <label>Photoshop</label>
-          </div>
-          <div class="chart-doughnut-container">
-            <canvas id="3D-chart"></canvas>
-            <h5></h5>
-            <label>Diseño 3D</label>
-          </div>
-          <div class="chart-doughnut-container">
-            <canvas id="english-chart"></canvas>
-            <h5></h5>
-            <label>Ingles</label>
-          </div>
-        </div>
-      </article>
-      <!--//////////////////////////////////////////////////////MUESTRA DE HABILIDADES -->
-      <article class="my-5">
-        <h3 class="text-center mb-5 strong-text">PortFolio</h3>
-        <div class="row p-0 my-5">
+        </article>
+      </section>
+      <section id="skills">
+        <h3 class="my-5 strong-text">
+          <i class="far text-success fa-dot-circle mr-3"></i>OTHER SKILLS
+        </h3>
+        <p class="my-3">
+          I'm not only focused on writing efficient code, but also on working
+          collaboratively, adapting to different challenges, and continuously
+          learning. My soft skills allow me to effectively communicate with team
+          members, solve problems creatively, and stay organized under pressure.
+        </p>
+        <ul class="d-flex justify-content-center skills-list flex-wrap w-100">
+          <li class="skill-container"><p>Writtne English</p></li>
+          <li class="skill-container"><p>Spoken English</p></li>
+          <li class="skill-container"><p>Problem solving</p></li>
+          <li class="skill-container"><p>Adaptability and flexibility</p></li>
+          <li class="skill-container"><p>Critical Thinking</p></li>
+          <li class="skill-container"><p>Effective communication</p></li>
+          <li class="skill-container"><p>Attention to Detail</p></li>
+          <li class="skill-container"><p>Creativity and innovation</p></li>
+          <li class="skill-container"><p>Self-motivation and discipline</p></li>
+          <li class="skill-container"><p>Leadership potential</p></li>
+          <li class="skill-container"><p>Teamwork and collaboration</p></li>
+          <li class="skill-container"><p>Methodical</p></li>
+        </ul>
+      </section>
+      <section id="samples" class="my-5">
+        <h3 class="strong-text">
+          <i class="far text-success fa-dot-circle mr-3"></i>WORK SAMPLES
+        </h3>
+        <p class="mb-5">
+          Some of my first works starting out in the world of programming.
+        </p>
+
+        <article class="row p-0 my-5">
           <div class="col-12 col-lg-4">
-            <h5 class="m-0">Jugando con</h5>
+            <h5 class="m-0">Playing with</h5>
             <h2 class="strong-text m-0">React JS</h2>
             <!-- <h2 class="strong-text display-4 m-0">a Prueba</h2> -->
             <p class="mb-3">
-              Para poner a prueba mi creatividad y capacidad a la hora de trabajar con React tome inspiración en un
-              clásico de los video juegos y
-              desarrolle esta App Web que simula el mismo. Al igual que el juego es posee parámetros configurables
-              mientras que los turnos y
-              handicap se dan de manera aleatoria.
+              To challenge my creativity and technical skills with React, I
+              built this web app inspired by a classsic video game. It simulates
+              the gameplay, allowing choose characters, configurable settings,
+              while turns and handicaps are randomly assigned—just.
             </p>
-            <a href="https://toys-fight.netlify.app" target="blank"><i
-                class="fas fa-play mr-3"></i>Abrir enlace</a>
+            <a href="https://toys-fight.netlify.app" target="blank"
+              ><i class="fa fa-play mr-3"></i>Play it</a
+            >
           </div>
           <div class="col-12 col-lg-8 p-3">
-            <img class="w-100" src="./media/toys-fight.png" alt="toys-fght" />
+            <img class="w-100" src="./assets/toys-fight.png" alt="toys-fght" />
           </div>
-        </div>
-        <div class="row revertible-row p-0 my-5">
-          <div class="col-12 col-lg-6">
-            <h5 class="m-0">Mi emprendimiento</h5>
-            <h2 class="strong-text">MonkeyBeat</h2>
+        </article>
+        <article class="row p-0 my-5">
+          <div class="col-12 col-lg-4">
+            <h5 class="m-0">Circclo's ERP</h5>
+            <h2 class="strong-text">Mockup</h2>
             <p class="display-7 mb-3">
-              Sitio Web de mi emprendimiento tecnológico que muestra mi capacidad y creatividad, diseñado en React JS
-              con base de datos en Firebase,
-              integrado con Mercado Pago y administrado desde de una aplicación de escritorio. La página actualmente se
-              encuentra en desarrollo
-              mientras también generan nuevos contenidos visuales, productos y material para tutoriales e instructivos.
+              Mockup developed as a sample of the new design to be implemented
+              when I joined the Circclo team. It's a semi-functional mockup
+              primarily focused on the aesthetics that would be used in terms of
+              navigation, popups, and forms.
             </p>
-            <a href="https://toys-fight.netlify.app" target="blank"><i
-                class="fas fa-play mr-3"></i>Abrir enlace</a>
+            <a
+              href="https://ruizpastorino.github.io/cirrclo-app/#/login"
+              target="blank"
+              ><i class="fa fa-play mr-3"></i>Open Preview</a
+            >
           </div>
-          <div class="col-12 col-lg-6 p-3">
-            <img class="w-100" src="./media/monkeybeat-instructivos.jpg" alt="toys-fght" />
+          <div class="col-12 col-lg-8 p-3">
+            <img class="w-100" src="./assets/MOCKUP.png" alt="ERP Mockup" />
           </div>
-        </div>
-      </article>
-
-      <!--//////////////////////////////////////////////////////PRODUCTOS -->
-      <article id="services" class="my-5">
-        <h3 class="strong-text text-center mb-5">Desarrollo de Apps</h3>
-        <!--//////////////////////////////////////////////////////BANNER -->
-        <div class="w-100 my-5">
-          <div class="row d-flex align-items-start justify-content-end">
-            <div class="col-12 col-lg-6 my-2">
-              <h4 class="strong-text m-0">Enfoque en el usuario</h4>
-              <p class="">
-                Una aplicación debe estar diseñado para las personas que lo usarán. El diseño se integra fácilmente con
-                cualquier dispositivo, está
-                centrado en el usuario en una interfaz amigable e intuitiva que facilita las tareas cotidianas con
-                herramientas para el análisis y
-                rápida toma de decisiones.
-              </p>
+        </article>
+        <article class="row p-0 my-5">
+          <div class="col-12 col-lg-4">
+            <h5 class="m-0">Monkey</h5>
+            <h2 class="strong-text">BEATS</h2>
+            <p class="display-7 mb-3">
+              I developed some components that combine electronics and
+              programming, primarily to transform an acoustic drum kit into a
+              digital one. I developed sensors and interface modules from
+              scratch. The module served as an intermediary between the
+              instrument and the computer, for use with specialized software.
+            </p>
+            <a href="https://www.youtube.com/watch?v=hPaIhrM7pxM" target="blank"
+              ><i class="fa fa-play mr-3"></i>Go to youtube</a
+            >
+          </div>
+          <div class="col-12 col-lg-8 p-3">
+            <iframe
+              style="width: 100%; height: 100%"
+              src="https://www.youtube.com/embed/hPaIhrM7pxM?si=_lsS-W04_fVJ49IM"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </article>
+        <article class="row p-0 my-5">
+          <div class="col-12 col-lg-4">
+            <h5 class="m-0">Monkey Beats</h5>
+            <h2 class="strong-text">WEBSITE</h2>
+            <p class="display-7 mb-3">
+              The website for my electronic components project for acoustic
+              drums. One of the first projects I created using React, where I
+              combined my own design and structure with my Photoshop designs and
+              3D images. Development of the site is currently suspended.
+            </p>
+            <a href="https://monkeybeat.netlify.app/" target="blank"
+              ><i class="fa fa-play mr-3"></i>Check site</a
+            >
+          </div>
+          <div class="col-12 col-lg-8 p-3">
+            <img
+              class="w-100"
+              src="./assets/MonkeyBeats.png"
+              alt="MonkeyBeats"
+            />
+          </div>
+        </article>
+        <h3 class="text-center mb-5 strong-text">
+          <i class="far text-success fa-dot-circle mr-3"></i>PHOTOSHOP EDITS
+        </h3>
+        <article class="container my-5 p-3 bg-secondary">
+          <div class="justify-content-between row p-3">
+            <div class="sample-thumb">
+              <img class="" src="./assets/ps-sample3.jpg" alt="" />
             </div>
-            <div class="d-flex align-items-end justify-content-center p-2 col-12 col-lg-6 my-2">
-              <i class="mr-3 fas fa-tv display-2"></i>
-              <i class="mr-3 fas fa-desktop display-3"></i>
-              <i class="mr-3 fas fa-tablet-alt display-4"></i>
-              <i class="mr-3 fas fa-mobile-alt display-5"></i>
+            <div class="sample-thumb">
+              <img class="" src="./assets/ps-sample4.jpg" alt="" />
+            </div>
+            <div class="sample-thumb">
+              <img class="" src="./assets/ps-sample5.jpg" alt="" />
+            </div>
+            <div class="sample-thumb">
+              <img class="" src="./assets/ps-sample1.jpg" alt="" />
+            </div>
+            <div style="height: unset" class="w-100 sample-thumb">
+              <img class="w-100" src="./assets/ps-sample6.jpg" alt="" />
             </div>
           </div>
-        </div>
-
-        <p class="my-3 text-justify"></p>
-        <div class="row flex-wrap my-5">
-          <div class="col-12 col-md-6 mb-5">
-            <h5 class="mb-4"><i class="fas fa-car text-success mr-2"></i>Spider-GECO</h5>
-            <img class="w-100 border border-warning" src="./media/cochera.jpg" alt="" />
-            <p class="my-4">
-              Spider-GECO es una aplicación para gestión de cobros para cocheras comerciales. Permite la realizar de
-              cobros por hora, día o mensual,
-              facturación diaria, creación de múltiples usuarios con diferentes niveles de acceso, registros detallados
-              con marca de tiempo,
-              registro de gastos, gestión de sucursales, gestión de personal, facturación por turnos, emisión de tickets
-              , balances mensuales,
-              estadísticas de movimientos, proyecciones de ventas, consultas de facturación por fecha, apertura y cierre
-              de facturación. Todo
-              gestionado a través de una interfaz de usuario sencilla e intuitiva con base de datos en la nube que
-              admite transacciones en tiempo
-              real.
-            </p>
-          </div>
-          <div class="col-12 col-md-6 mb-5">
-            <h5 class="mb-4"><i class="fas fa-tools text-warning mr-2"></i>Spider-GEMA</h5>
-            <img class="w-100 border border-warning" src="./media/servigruas.jpg" alt="" />
-            <p class="my-4">
-              Spider-GEMA es una aplicación para gestión de insumos y mantenimiento equipos. Permite entre muchas otras
-              funciones llevar control y
-              movimientos de stock, relacionar insumos equivalentes, relacionar repuestos con su respectivo equipo,
-              generar alertas de
-              mantenimiento, generar reportes de compras, administrar mantenimiento preventivo y correctivo, alertas,
-              ordenes de trabajo,
-              administrar documentaciones con vencimiento, gestionar personal, calcular costos mantenimiento, emitir
-              reportes de movimientos,
-              administrar múltiples almacenes o depósitos. Todo a través de una interfaz de usuario sencilla e intuitiva
-              con base de datos en la
-              nube que admite transacciones en tiempo real en version de escritorio y/o para dispositivos móviles.
-            </p>
-          </div>
-          <div class="col-12 col-md-6 mb-5">
-            <h5 class="mb-4"><i class="fas fa-box-open text-info mr-2"></i>Spider-GEAR</h5>
-            <img class="w-100 border border-warning" src="./media/2d02626d-003d-4f92-b6c3-3308fdc3b723.jpg" alt="" />
-            <p class="my-4">
-              Spider-GEAR es una Aplicación para gestión de Puestos de Venta. Permite administración de sucursales o
-              almacenes, artículos, stock,
-              asignar ubicación, codificar un producto, ventas, compras, alertas para stock bajo, relacionar artículos
-              por tamaños, precio, modelo o
-              marca, administrar usuarios, registros con marca de tiempo, ingreso y egreso de artículos, facturación
-              diaria, facturación por turnos,
-              apertura, cierre diario entre otras funciones, también permite la emisión de comprobantes impresos no
-              validos como factura y etiquetas
-              de productos con información detallada. Todo es gestionado a través de una interfaz sencilla e intuitiva
-              conectada a una base de datos
-              en la nube en tiempo real desde su versión de escritorio o para dispositivos móviles.
-            </p>
-          </div>
-          <div class="col-12 col-md-6 mb-5">
-            <h5 class="mb-4"><i class="fas fa-cookie-bite text-danger mr-2"></i>Spider-GEPRO</h5>
-            <img class="w-100 border border-warning" src="./media/servigruas.jpg" alt="" />
-            <p class="my-4">
-              Spider-GEPRO es una Aplicación para gestión de productos manufacturados. Permite administración de
-              insumos, productos terminados,
-              costos de insumos, sucursales o almacenes, artículos, stock, asignar ubicación, codificar un producto,
-              ventas, compras, alertas para
-              stock bajo, relacionar artículos por tamaños, precio, modelo o marca, administrar usuarios, registros con
-              marca de tiempo, ingreso y
-              egreso de artículos, facturación diaria, facturación por turnos, apertura, cierre diario entre otras
-              funciones, también permite la
-              emisión de comprobantes impresos no validos como factura y etiquetas de productos con información
-              detallada. Todo es gestionado a
-              través de una interfaz sencilla e intuitiva conectada a una base de datos en la nube en tiempo real desde
-              su versión de escritorio o
-              para dispositivos móviles.
-            </p>
+          <p class="text-center p-2 font-italic">
+            Work done for a Facebook's international Photoshop community and
+            Cosplayers
+          </p>
+        </article>
+      </section>
+      <section
+        id="aboutme"
+        class="my-5 d-flex w-100 flex-wrap align-items-center"
+      >
+        <div class="col-12 col-md-4 mb-4">
+          <div class="img-wrapper p-2 position-relative reverse">
+            <span class="bg-warning circle-image"></span>
+            <img class="piece piece-1" src="./assets/gorra.png" />
+            <img class="piece piece-2" src="./assets/ojos.png" />
+            <img class="piece piece-3" src="./assets/nariz.png" />
+            <img class="piece piece-4" src="./assets/mandibula.png" />
           </div>
         </div>
-      </article>
-    </section>
-    <hr class="my-5">
-    <section id="metodology" class="my-5">
-      <h3 class="strong-text text-center mb-5">Metodologia de Trabajo</h3>
-      <div class="row">
-        <div class="d-flex col-12 col-md-6 col-lg-4 my-3">
-          <div class="p-3">
-            <h2 class="display-4 strong-text">1</h2>
-          </div>
-          <div class="flex-1 p-3">
-            <h5>Resumen</h5>
-            <p>
-              Comienzo recibiendo un resumen de lo que necesita o del área en el que se desempeña para tener suficiente
-              contexto y poder ofrecerle una propuesta.
-            </p>
-          </div>
+        <div class="text-dark p-2 col-12 col-md-8 mb-4">
+          <h2 class="strong-text display-5">
+            <i class="fas fa-id-card"></i> About Me
+          </h2>
+          <p>
+            Beyond programming, I’m also a multi-instrumentalist musician. My
+            passion for music led me to explore the world of electronics, where
+            I began developing custom components for instruments—an experience
+            that greatly boosted both my creativity and technical skills, and
+            ultimately served as my gateway into the world of programming. I
+            also have experience with Photoshop and other creative tools,
+            particularly in photo editing and visual composition design, which
+            allows me to bring an aesthetic perspective to the projects I work
+            on. I consider myself a curious, self-taught, and versatile person,
+            always seeking new ways to innovate and blend technology, art, and
+            functionality.
+          </p>
         </div>
-        <div class="d-flex col-12 col-md-6 col-lg-4 my-3">
-          <div class="p-3">
-            <h2 class="display-4 strong-text">2</h2>
-          </div>
-          <div class="flex-1 p-3">
-            <h5>Diseño</h5>
-            <p>
-              En el caso que no tengamos una base en la que comenzar, aquí es donde perfeccionamos el diseño coordinando
-              aspectos estéticos y funcionales
-            </p>
-          </div>
+      </section>
+    </main>
+    <footer
+      id="footer"
+      class="w-100 bg-dark p-5 d-flex justify-content-center flex-wrap"
+    >
+      <div class="text-center p-2 col-12 col-md-6 col-lg-3">
+        <i class="fas fa-laptop-code display-3 mb-3"></i>
+        <h1 class="display-6 strong-text">
+          <span class="text-warning">Ruiz Pastorino</span> <br />
+          M. Agustin
+        </h1>
+      </div>
+      <div class="d-flex flex-wrap p-2 col-12 col-md-6 col-lg-3">
+        <div class="col-12 col-md-4 p-2">
+          <i class="fas fa-user-tie display-3"></i>
         </div>
-        <div class="d-flex col-12 col-md-6 col-lg-4 my-3">
-          <div class="p-3">
-            <h2 class="display-4 strong-text">3</h2>
-          </div>
-          <div class="flex-1 p-3">
-            <h5>Desarrollo</h5>
-            <p>
-              Comenzamos el desarrollo del producto y coordinamos revisiones periódicas del progreso para afinar los
-              detalles y funcionamiento
-          </div>
-        </div>
-        <div class="d-flex col-12 col-md-6 col-lg-4 my-3">
-          <div class="p-3">
-            <h2 class="display-4 strong-text">4</h2>
-          </div>
-          <div class="flex-1 p-3">
-            <h5>Capacitación</h5>
-            <p>
-              Repasamos funcionalidades y entrenamos en el funcionamiento de todas y cada una de las herramientas
-              desarrolladas dentro del producto.
-          </div>
-        </div>
-        <div class="d-flex col-12 col-md-6 col-lg-4 my-3">
-          <div class="p-3">
-            <h2 class="display-4 strong-text">5</h2>
-          </div>
-          <div class="flex-1 p-3">
-            <h5>Testing</h5>
-            <p>
-              Nos aseguramos el correcto funcionamiento del producto, analizamos el mismo y si es necesario se retorna
-              al paso 5 para implementarlas
-          </div>
-        </div>
-        <div class="d-flex col-12 col-md-6 col-lg-4 my-3">
-          <div class="p-3">
-            <h2 class="display-4 strong-text">6</h2>
-          </div>
-          <div class="flex-1 p-3">
-            <h5>Puesta en marcha</h5>
-            <p>
-              Ya estamos listo para la puesta en marcha del producto realizamos una última capacitación si es necesario
-              y me encargo de que todo este instalado y listo para funcionar.</p>
-          </div>
+        <div class="col-12 col-md-8">
+          <p class="strong-text">San Miguel de Tucumán</p>
+          <p>Tucumán - Argentina</p>
+          <p class="strong-text">Contact</p>
+          <p>
+            <a href="mailto:ruizpastorino@hotmail.com"
+              >ruizpastorino@hotmail.com</a
+            >
+          </p>
+          <p><a href="tel:3814039662">+5493814039662</a></p>
         </div>
       </div>
-    </section>
-    <hr class="my-5">
-    <!--//////////////////////////////////////////////////////ACERCA DE MI -->
-    <article id="aboutme" class="d-flex flex-wrap container align-items-center">
-      <div class="col-12 col-md-4 mb-4">
-        <div class="img-wrapper p-2 position-relative reverse">
-          <span class="bg-warning circle-image"></span>
-          <img class="piece piece-1" src="./media/gorra.png" />
-          <img class="piece piece-2" src="./media/ojos.png" />
-          <img class="piece piece-3" src="./media/nariz.png" />
-          <img class="piece piece-4" src="./media/mandibula.png" />
+      <div class="p-2 text-center col-12 col-md-6 col-lg-3">
+        <h6 class="strong-text">Social Media Networks</h6>
+        <div>
+          <a
+            target="_blank"
+            href="https://www.facebook.com/gordo.pastor/"
+            class="display-5 mr-2 fab fa-facebook"
+          ></a>
+          <a
+            target="_blank"
+            href="https://www.instagram.com/ruizpastorino/"
+            class="display-5 mr-2 fab fa-instagram"
+          ></a>
+          <a
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=3814039662"
+            class="display-5 mr-2 fab fa-whatsapp"
+          ></a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/ruizpastorino/"
+            class="display-5 mr-2 fab fa-linkedin"
+          ></a>
         </div>
       </div>
-      <div class="text-dark p-2 col-12 col-md-8 mb-4">
-        <h2 class="strong-text display-5"><i class="fas fa-id-card"></i> About Me</h2>
-        <p>
-          Soy Agustín Ruiz Pastorino soy Músico, Editor de Photoshop y principalmente Desarrollador Web Freelancer,
-          tengo
-          <span id="currentAge"></span> años y vivo en la ciudad de San Miguel de Tucumán en Tucumán (Argentina) donde
-          me desempeño en el desarrollo
-          de aplicaciones de escritorio y móviles utilizando tecnologías y lenguajes de programación Web. Comencé en el
-          mundo de la programación en
-          el año 2017 programando en C++ como autodidacta de Arduino emprendiendo un proyecto como hobby relacionado a
-          instrumentos musicales el
-          cual termino convirtiéndose en un pequeño emprendimiento comercial y una puerta de inicio hacia el mundo de la
-          programación. Luego
-          continúe mi formación realizando cursos de capacitación en Desarrollo Web relacionados al Front End y Back
-          End, los cuales me dieron las
-          bases y conocimientos para continuar un constante aprendizaje por cuenta propia indagando en diferentes
-          tecnologías, foros de debate,
-          tutoriales y documentaciones.
-        </p>
-      </div>
-    </article>
-    <!--//////////////////////////////////////////////////////SOBRE PHOTOSHOP -->
-    <article class="container my-5 p-3 bg-secondary">
-      <h2 class="text-center strong-text display-6">Mis Ediciones en Photoshop</h2>
-      <div class="justify-content-between row p-3">
-        <div class="sample-thumb">
-          <img class="" src="./media/ps-sample3.jpg" alt="" />
-        </div>
-        <div class="sample-thumb">
-          <img class="" src="./media/ps-sample4.jpg" alt="" />
-        </div>
-        <div class="sample-thumb">
-          <img class="" src="./media/ps-sample5.jpg" alt="" />
-        </div>
-        <div class="sample-thumb">
-          <img class="" src="./media/ps-sample1.jpg" alt="" />
-        </div>
-        <div style="height: unset" class="w-100 sample-thumb">
-          <img class="w-100" src="./media/ps-sample6.jpg" alt="" />
-        </div>
-      </div>
-      <p class="text-center p-2 font-italic">
-        Ediciones realizadas como colaborador en comunidad de phostoshopistas y Editores Gráficos de todo el mundo
-      </p>
-    </article>
-  </main>
-  <!--//////////////////////////////////////////////////////FOOTER -->
-  <script src="./moment.min.js"></script>
-  <script src="./utility.js"></script>
-
-  <footer id="footer" class="w-100 bg-dark p-5 d-flex justify-content-center flex-wrap">
-    <div class="text-center p-2 col-12 col-md-6 col-lg-3">
-      <i class="fas fa-laptop-code display-3 mb-3"></i>
-      <h1 class="display-6 strong-text">
-        <span class="text-warning">Ruiz Pastorino</span> <br />
-        M. Agustin
-      </h1>
-    </div>
-    <div class="d-flex flex-wrap p-2 col-12 col-md-6 col-lg-3">
-      <div class="col-12 col-md-4 p-2">
-        <i class="fas fa-box-open display-3"></i>
-      </div>
-      <div class="col-12 col-md-8">
-        <h6 class="strong-text display-6">Productos</h6>
-        <a class="text-light d-block display-8 mb-1" href="">Gestion de Articulos</a>
-        <a class="text-light d-block display-8 mb-1" href="">Gestion de Productos</a>
-        <a class="text-light d-block display-8 mb-1" href="">Gestion de Cocheras</a>
-        <a class="text-light d-block display-8 mb-1" href="">Gestion de Mantenimiento</a>
-      </div>
-    </div>
-    <div class="d-flex flex-wrap p-2 col-12 col-md-6 col-lg-3">
-      <div class="col-12 col-md-4 p-2">
-        <i class="fas fa-user-tie display-3"></i>
-      </div>
-      <div class="col-12 col-md-8">
-        <p class="strong-text">San Miguel de Tucumán</p>
-        <p>Tucumán - Argentina</p>
-        <p class="strong-text">Contacto</p>
-        <p>ruizpastorino@hotmail.com</p>
-        <p>+543814039662</p>
-      </div>
-    </div>
-    <div class="p-2 text-center col-12 col-md-6 col-lg-3">
-      <h6 class="strong-text">Social Media Networks</h6>
-      <div>
-        <i class="display-5 mr-2 fab fa-facebook"></i>
-        <i class="display-5 mr-2 fab fa-instagram"></i>
-        <i class="display-5 mr-2 fab fa-whatsapp"></i>
-        <i class="display-5 mr-2 fab fa-linkedin"></i>
-      </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
