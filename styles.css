@@ -202,7 +202,7 @@ header {
 
 @font-face {
   font-family: mulli;
-  src: url(media/Muli-Black.ttf);
+  src: url(assets/Muli-Black.ttf);
 }
 
 .strong-text {
@@ -322,8 +322,8 @@ header {
   .sample-thumb img {
     width: 100%;
   }
-  body * {
-    text-align: center;
+  h3, h5{
+    font-size: 30px!important;
   }
   body p {
     text-align: start;
